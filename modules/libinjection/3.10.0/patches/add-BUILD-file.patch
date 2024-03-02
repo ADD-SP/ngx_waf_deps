@@ -1,0 +1,37 @@
+--- /dev/null	2024-03-02 12:56:13.252001726 +0800
++++ BUILD	2024-03-02 19:53:47.226091216 +0800
+@@ -0,0 +1,34 @@
++package(default_visibility = ["//visibility:public"])
++
++alias(
++    name = "libinjection",
++    actual = ":injection",
++)
++
++cc_library(
++    name = "injection",
++    srcs = [
++        "src/libinjection.h",
++        "src/libinjection_html5.c",
++        "src/libinjection_html5.h",
++        "src/libinjection_sqli.c",
++        "src/libinjection_sqli.h",
++        "src/libinjection_sqli_data.h",
++        "src/libinjection_xss.c",
++        "src/libinjection_xss.h",
++    ],
++    hdrs = [
++        "src/libinjection.h",
++        "src/libinjection_html5.h",
++        "src/libinjection_sqli.h",
++        "src/libinjection_sqli_data.h",
++        "src/libinjection_xss.h",
++    ],
++    textual_hdrs = [
++        "src/libinjection.h",
++        "src/libinjection_html5.h",
++        "src/libinjection_sqli.h",
++        "src/libinjection_sqli_data.h",
++        "src/libinjection_xss.h",
++    ],
++)

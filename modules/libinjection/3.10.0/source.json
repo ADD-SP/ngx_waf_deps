@@ -1,0 +1,8 @@
+{
+    "url": "https://github.com/libinjection/libinjection/archive/refs/tags/v3.10.0.tar.gz",
+    "integrity": "sha256-ndeuaKIaPFD3BcODsbcUx3/UCTsKVhpUAPDLCtebGuc=",
+    "strip_prefix": "libinjection-3.10.0",
+    "patches": {
+        "add-BUILD-file.patch": "sha256-Uju1T4toTBjXEtUG9S92h3a0XgdmY0Ctjk14S/tQQzM="
+    }
+}

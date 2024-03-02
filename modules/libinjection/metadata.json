@@ -1,0 +1,12 @@
+{
+    "homepage": "https://github.com/libinjection/libinjection",
+    "maintainers": [
+        {
+            "name": "Nick Galbreath",
+            "github": "client9"
+        }
+    ],
+    "versions": [
+        "3.10.0"
+    ]
+}
