@@ -1,0 +1,12 @@
+{
+    "homepage": "https://github.com/troydhanson/uthash",
+    "maintainers": [
+        {
+            "name": "Troy D. Hanson",
+            "github": "troydhanson"
+        }
+    ],
+    "versions": [
+        "2.3.0"
+    ]
+}

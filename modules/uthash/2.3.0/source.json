@@ -1,0 +1,8 @@
+{
+    "url": "https://github.com/troydhanson/uthash/archive/refs/tags/v2.3.0.tar.gz",
+    "integrity": "sha256-4QOCq3VRi62DGeuSKtBPkHyyDMy0UaOqmAydAF5mGsw=",
+    "strip_prefix": "uthash-2.3.0",
+    "patches": {
+        "add-BUILD-file.patch": "sha384-r73PQrn7NLDrX0loRb5EBZb5HR0X0ZJMExDRZDlZVFRiJRTK+2WbAhy4TI9RJdtm"
+    }
+}
