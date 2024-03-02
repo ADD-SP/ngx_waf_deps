@@ -1,0 +1,26 @@
+--- /dev/null	2024-03-02 12:56:13.252001726 +0800
++++ BUILD	2024-03-02 18:59:43.804097282 +0800
+@@ -0,0 +1,23 @@
++load("@rules_foreign_cc//foreign_cc:defs.bzl", "configure_make")
++
++package(default_visibility = ["//visibility:public"])
++
++filegroup(
++    name = "all_srcs",
++    srcs = glob(
++        include = ["**"],
++        exclude = ["*.bzl"],
++    ),
++)
++
++configure_make(
++    name = "libsodium",
++    configure_options = [
++        "--enable-shared=yes",
++        "--enable-static=yes",
++        "--with-pic",
++    ],
++    lib_source = ":all_srcs",
++    out_shared_libs = ["libsodium.so"],
++    out_static_libs = ["libsodium.a"],
++)

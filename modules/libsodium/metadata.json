@@ -1,0 +1,12 @@
+{
+    "homepage": "https://github.com/jedisct1/libsodium",
+    "maintainers": [
+        {
+            "name": "Frank Denis",
+            "github": "jedisct1"
+        }
+    ],
+    "versions": [
+        "1.0.19"
+    ]
+}
