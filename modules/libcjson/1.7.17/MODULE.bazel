@@ -1,0 +1,5 @@
+module(
+    name = "libcjson",
+    version = "1.7.17",
+    compatibility_level = 1,
+)

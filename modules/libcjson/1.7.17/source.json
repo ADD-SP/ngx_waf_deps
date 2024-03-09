@@ -1,0 +1,8 @@
+{
+    "url": "https://github.com/DaveGamble/cJSON/archive/refs/tags/v1.7.17.tar.gz",
+    "integrity": "sha384-87ybIUiFtIRmKYZmkDXALFtbdT7XO+ymoF46ATieu1xcf1YS/tnNQlov3ngGsil5",
+    "strip_prefix": "cJSON-1.7.17",
+    "patches": {
+        "add-BUILD-file.patch": "sha384-kmCU7ibPLpnR694Lx7LMAqpdkqR0E6/UnCp+gRKkUSZmTUPYLS3aYUPovhc8ej6L"
+    }
+}

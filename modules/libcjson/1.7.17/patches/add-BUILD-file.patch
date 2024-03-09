@@ -1,0 +1,21 @@
+--- /dev/null	2024-03-02 12:56:13.252001726 +0800
++++ BUILD	2024-03-09 17:17:42.992263212 +0800
+@@ -0,0 +1,18 @@
++package(default_visibility = ["//visibility:public"])
++
++exports_files([
++    "cJSON.h",
++])
++
++alias(
++    name = "libcjson",
++    actual = ":cjson",
++)
++
++cc_library(
++    name = "cjson",
++    srcs = [
++        "cJSON.c",
++        "cJSON.h",
++    ],
++)

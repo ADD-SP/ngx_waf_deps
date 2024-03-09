@@ -1,0 +1,12 @@
+{
+    "homepage": "https://github.com/DaveGamble/cJSON",
+    "maintainers": [
+        {
+            "name": "Dave Gamble",
+            "github": "DaveGamble"
+        }
+    ],
+    "versions": [
+        "1.7.17"
+    ]
+}
