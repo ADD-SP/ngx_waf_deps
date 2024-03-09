@@ -1,0 +1,28 @@
+--- /dev/null	2024-03-02 12:56:13.252001726 +0800
++++ BUILD	2024-03-09 20:36:34.541339769 +0800
+@@ -0,0 +1,25 @@
++load("@rules_foreign_cc//foreign_cc:defs.bzl", "configure_make")
++
++package(default_visibility = ["//visibility:public"])
++
++filegroup(
++    name = "all_srcs",
++    srcs = glob(include = ["**"]),
++)
++
++configure_make(
++    name = "libmodsecurity",
++    configure_in_place = True,
++    configure_options = [
++        "--disable-doxygen-doc",
++        "--disable-doxygen-html",
++        "--disable-valgrind-memcheck",
++        "--disable-valgrind-helgrind",
++        "--disable-valgrind-drd",
++        "--enable-shared",
++        "--enable-static",
++    ],
++    out_shared_libs = ["libmodsecurity.so"],
++    out_static_libs = ["libmodsecurity.a"],
++    lib_source = ":all_srcs",
++)

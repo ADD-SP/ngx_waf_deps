@@ -1,0 +1,8 @@
+{
+    "url": "https://github.com/owasp-modsecurity/ModSecurity/releases/download/v3.0.12/modsecurity-v3.0.12.tar.gz",
+    "integrity": "sha384-VIzQBmjj5Z6nHzpsIG5jUcONcb3XG+C3CAdSc2lEoCm0uzybVbtseURdoUE/H2cd",
+    "strip_prefix": "modsecurity-v3.0.12",
+    "patches": {
+        "add-BUILD-file.patch": "sha384-UEplPbvsWQXorKs1Z7/upVxFDh8LjJet8KcddJeXlE8LbNxcxPKloSgD3jX5p+Wr"
+    }
+}

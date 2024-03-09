@@ -1,0 +1,12 @@
+{
+    "homepage": "https://github.com/owasp-modsecurity/ModSecurity",
+    "maintainers": [
+        {
+            "name": "OWASP ModSecurity",
+            "github": "owasp-modsecurity"
+        }
+    ],
+    "versions": [
+        "3.0.12"
+    ]
+}
