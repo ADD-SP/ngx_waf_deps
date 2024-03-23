@@ -3,6 +3,6 @@
     "integrity": "sha256-AY15/goEXMoHMx03vQy1ey6DjFG8SP2DehRy5QBou+o=",
     "strip_prefix": "libsodium-stable",
     "patches": {
-        "add-BUILD-file.patch": "sha256-yz0ETLRz1SES6B/CrHqScYLqtkpj+i0km1TNMFQkNEY="
+        "add-BUILD-file.patch": "sha384-hNhvK2vppCFj1GY5ZOWVjySdiGPNWg6Wf+FzlRRxoPaJlaZeLfJoihp5/CRePMtG"
     }
 }

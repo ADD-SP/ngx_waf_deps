@@ -1,6 +1,6 @@
---- /dev/null	2024-03-02 12:56:13.252001726 +0800
-+++ BUILD	2024-03-02 18:59:43.804097282 +0800
-@@ -0,0 +1,23 @@
+--- /dev/null	2024-03-21 19:54:41.864001598 +0800
++++ BUILD	2024-03-23 10:07:58.338907824 +0800
+@@ -0,0 +1,27 @@
 +load("@rules_foreign_cc//foreign_cc:defs.bzl", "configure_make")
 +
 +package(default_visibility = ["//visibility:public"])
@@ -19,6 +19,10 @@
 +        "--enable-shared=yes",
 +        "--enable-static=yes",
 +        "--with-pic",
++    ],
++    args = [
++        "--jobs=$(nproc)",
++        "--load-average=$(nproc)",
 +    ],
 +    lib_source = ":all_srcs",
 +    out_shared_libs = ["libsodium.so"],
