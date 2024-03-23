@@ -1,6 +1,6 @@
---- /dev/null	2024-03-02 12:56:13.252001726 +0800
-+++ BUILD	2024-03-09 20:36:34.541339769 +0800
-@@ -0,0 +1,25 @@
+--- /dev/null	2024-03-21 19:54:41.864001598 +0800
++++ BUILD	2024-03-23 10:08:47.086763650 +0800
+@@ -0,0 +1,29 @@
 +load("@rules_foreign_cc//foreign_cc:defs.bzl", "configure_make")
 +
 +package(default_visibility = ["//visibility:public"])
@@ -21,6 +21,10 @@
 +        "--disable-valgrind-drd",
 +        "--enable-shared",
 +        "--enable-static",
++    ],
++    args = [
++        "--jobs=$(nproc)",
++        "--load-average=$(nproc)",
 +    ],
 +    out_shared_libs = ["libmodsecurity.so"],
 +    out_static_libs = ["libmodsecurity.a"],
